@@ -1,3 +1,168 @@
-p{
-    color: red;
+/* GENERAL */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(14, 13, 13);
+}
+
+button{
+    color: white;
+    border: black 1px solid;
+    border-radius: 30px;
+    height: 30px;
+    width: 100px;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.gold-btn {
+    background-color: goldenrod;
+}
+
+.red-btn {
+    background-color: rgb(142, 5, 5);
+}
+
+
+
+/* HEADER */
+
+header{
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header h2{
+    color: goldenrod;
+}
+
+input{
+    padding: 2px;
+    padding-left: 8px;
+    background: none;
+    border: grey 1px solid;
+    color: grey;
+    border-radius: 10px;
+    height: 20px;
+    width: 120px;
+}
+
+
+
+/* NAVIGATION */
+
+#navigation {
+    width: 100%;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: goldenrod;
+}
+
+#navigation ul {
+    list-style: none;
+}
+
+#navigation ul li{
+    display: inline-block;
+    font-size: 14px;
+}
+
+#navigation ul li:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#navigation ul li p{
+    margin: 0 20px;
+}
+
+
+
+/* GAME CONTAINER */
+
+#game-container{
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.game-card{
+    width: 400px;
+    height: 300px;
+}
+
+.game-name {
+    text-transform: uppercase;
+    color: goldenrod;
+    font-size: 14px;
+}
+
+.game-box{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    background-size: cover;
+    background-repeat: none;
+    border: 3px goldenrod solid;
+}
+
+.game-hover{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(4, 0, 0, 0.8);
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.game-box:hover .game-hover{
+    display: flex;
+}
+
+.game-hover p{
+    color: white;
+}
+
+
+
+.new-container{
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+}
+
+.new-text{
+    color: white;
+    position: absolute;
+    font-size: 11px;
+    transform: rotate(-45deg) translateY(10px) translateX(-4px);
+}
+
+.new-bg{
+    position: absolute;
+    background-color: black;
+    width: 70px;
+    height: 40px;
+    transform: translateY(-10px) translateX(-25px) rotate(-45deg);
 }
