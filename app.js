@@ -2,7 +2,7 @@
 window.onload = () => {
   fetch('./PRAGMATICPLAY-gamelist.json')
   .then(response => {
-      console.log(reponse);
+      console.log(response);
   })
   .then(json => {
       console.log(json);
