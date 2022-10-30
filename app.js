@@ -2,17 +2,13 @@
 window.onload = () => {
   fetch('./PRAGMATICPLAY-gamelist.json')
   .then(response => {
-      if (!response.ok) {
-          throw new Error("HTTP error " + response.status);
-      }
-      return response.json();
+      console.log(reponse);
   })
   .then(json => {
-      this.users = json;
-      //console.log(this.users);
+      console.log(json);
   })
-  .catch(function () {
-      this.dataError = true;
+  .catch(function (err) {
+      console.log(err);
   })
 }
 
