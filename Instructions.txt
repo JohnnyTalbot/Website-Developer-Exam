@@ -1,0 +1,8 @@
+Instructions:
+ - Convert PSD to HMTL/CSS
+ - You can use any of these two Css Framework
+   - Bootsrap 4 (or higher version)
+   - Materialize Css
+   - No inline css
+ - Use the json file to call data from slots info "Game Name, Game Provider, New tag" (PRAGMATICPLAY-gamelist.json)
+ - For the New Tag, if game has a New Tag, put a new tag on the left top side of the game section. (new tag will base on the json file - if is_new=Y game will have a new tag, if is_new=N, game has no new tag)
